@@ -1,0 +1,23 @@
+{
+  "name": "elaris",
+  "private": true,
+  "description": "Elaris — AI assistant and software development platform",
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "repos": "scripts/elaris-repos.sh",
+    "bootstrap": "scripts/elaris-repos.sh clone && for app in apps/*/; do pnpm -C \"$app\" install; done",
+    "dev": "pnpm -C apps/web dev",
+    "build": "pnpm -C apps/web build",
+    "start": "pnpm -C apps/web start",
+    "lint": "pnpm -C apps/web lint",
+    "typecheck": "pnpm -C apps/web typecheck",
+    "desktop:dev": "pnpm -C apps/desktop desktop:dev",
+    "desktop:app": "pnpm -C apps/desktop desktop:app",
+    "desktop:build": "pnpm -C apps/desktop desktop:build",
+    "desktop:install": "pnpm -C apps/desktop desktop:install",
+    "desktop:typecheck": "pnpm -C apps/desktop typecheck"
+  }
+}

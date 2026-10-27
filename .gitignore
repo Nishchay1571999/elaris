@@ -1,0 +1,7 @@
+# Each app is its own git repo, cloned into apps/ by scripts/elaris-repos.sh.
+/apps/*/
+
+node_modules/
+.DS_Store
+*.log
+.env*
