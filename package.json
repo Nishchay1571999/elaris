@@ -2,7 +2,7 @@
   "name": "elaris",
   "private": true,
   "description": "Elaris — AI assistant and software development platform",
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.34.9",
   "engines": {
     "node": ">=20.9"
   },
